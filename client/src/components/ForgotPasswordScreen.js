@@ -89,6 +89,8 @@ const ForgotPasswordScreen = () => {
           Reset Password
         </Typography>
         <form onSubmit={forgotPasswordHandler} className={classes.form} noValidate>
+        {error && <span className="error-message">{error}</span>}
+        {success && <span className="success-message">{success}</span>}
           <TextField
             variant="outlined"
             margin="normal"
