@@ -104,7 +104,7 @@ const ResetPasswordScreen = (history, match) => {
         {error && <span className="error-message">{error} </span>}
         {success && (
           <span className="success-message">
-            {success} <Link to="/login">Login</Link>
+            {success} <Link to="/signin">Login</Link>
           </span>
         )}
           <TextField
@@ -114,6 +114,7 @@ const ResetPasswordScreen = (history, match) => {
             fullWidth
             id="password"
             label="New Password"
+            type="password"
             name="password"
             autoFocus
             value={password}
