@@ -9,9 +9,9 @@ connectDB();
 
 app.use(express.json());
 
-app.get("/", (req, res, next) => {
+/*app.get("/", (req, res, next) => {
     res.send("Api running");
-});
+});*/
 
 //connect routes
 app.use("/api/auth", require("./routes/auth"));
