@@ -68,7 +68,7 @@ exports.forgotPassword = async (req, res, next) => {
     await user.save();
 
     // Create reset url to email to provided email
-    const resetUrl = `https://glacial-fjord-40189.herokuapp.com/passwordreset/${resetToken}`;
+    const resetUrl = `http://localhost:5000/${resetToken}`;
 
     // HTML Message
     const message = `

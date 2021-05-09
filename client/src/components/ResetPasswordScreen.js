@@ -116,7 +116,7 @@ const ResetPasswordScreen = (history, match) => {
             label="New Password"
             type="password"
             name="password"
-            autoFocus
+            autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
